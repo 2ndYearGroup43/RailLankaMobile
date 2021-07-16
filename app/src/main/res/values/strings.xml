@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RailLankaTrack</string>
+    <string name="prefLoginState">loginstate</string>
+    <string name="URLROOT">http://192.168.43.107/raillankamvc/</string>
+</resources>

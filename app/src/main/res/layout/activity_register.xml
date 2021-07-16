@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <include
+            android:id="@+id/toolBar"
+            layout="@layout/bar_layout"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/toolBar">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register New Account"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="20dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Driver ID"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/driverId"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee ID"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/employeeId"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/firstName"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/lastName"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/email"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="mobileNo"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/mobileNo"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/password"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                app:met_floatingLabel="normal"
+                android:layout_margin="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/confirmPassword"
+                android:padding="2dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@android:color/white"
+                android:id="@+id/register"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

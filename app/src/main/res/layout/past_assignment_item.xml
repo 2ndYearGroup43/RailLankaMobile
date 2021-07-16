@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:elevation="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/complete"
+            android:padding="2dp"
+            android:id="@+id/completedLogo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Train Id:"
+            android:layout_toRightOf="@id/completedLogo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/trainIdPastA"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colombo - Kandy"
+            android:layout_alignBaseline="@id/trainIdPastA"
+            android:layout_toRightOf="@id/trainIdPastA"
+            android:textSize="15sp"
+            android:layout_marginLeft="2dp"
+            android:textStyle="bold"
+            android:id="@+id/stationsPastA"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:layout_toRightOf="@id/completedLogo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/datePastA"
+            android:layout_below="@id/trainIdPastA"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

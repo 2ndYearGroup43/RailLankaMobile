@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:elevation="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="2dp"
+            android:src="@drawable/support"
+            android:id="@+id/contactlogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Station"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/stationName"
+            android:layout_toRightOf="@id/contactlogo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PhoneNo"
+            android:id="@+id/phoneNo"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/contactlogo"
+            android:layout_below="@id/stationName"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
